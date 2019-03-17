@@ -8,47 +8,45 @@ special{
 	color:#ef423c;
 	text-align: center!important;
 }
-body{
-	
+body{	
 	padding: 0px 0px;
 	margin: 0px 0px;
+	min-width: 400px;
 }
-
 
 header{
 	border: solid #232323 1px;
 	text-align: center;
 	background-color:#232323;
 	color:white;
+	font-size: 4vw;	
+
 }
 
 nav {	
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr ;
 
-  }
+
+
+}
 
 
 nav .account-menu{
-	grid-column: 3 / span 1;
-	grid-row-start: 2;
-	border: solid orange 1px;
-	
-	display: flex;
+	/* border: solid red 1px; */
 
+	grid-column: 3 / span 1;
+	grid-row-start: 1;
+	display: flex;
 	font-size: .8125rem;
 	list-style-type: none; 
-	color: black;
-	padding: 10px;
-
-
-
 
 }
 
 nav .account-menu li{
 	padding: 0px 10px;
 	font-weight: bold;
+
 }
 
 nav .account-menu li:hover{
@@ -59,20 +57,33 @@ nav .account-menu li:hover{
   }
 
 nav #product-search-form{
-	grid-row-start: 2;
+	/* border: solid green 1px; */
+	grid-row-start: 1;
 	grid-column: 1 / span 1;
-	border: solid orange 1px;
+	
 
 }
 
 nav .menu{
+	/* border: solid red 1px; */
+	padding: 0px 2px ;
+	list-style: none;
 	grid-column: 1 / span 4;	
 	display:flex  ;
-	list-style: none;
+	justify-content: space-between;		
+	font-size: 2vw;	
+	font-size-adjust: inherit;
+	
+ 
+
+
 }
 
-nav .menu ul li{
-	border: solid red 1px;
+nav .menu li{
+	grid-column: 1/ span 1;
+	flex-direction:row;
+
+
 }
 nav .menu a{
 
@@ -80,15 +91,18 @@ nav .menu a{
 	border: solid grey 1px;
 	color:white;
 	display: block;
-    width: 115px;
   
-    background: #232323;
-    padding: 10px;
+  
+	background: #232323;
+	padding: 10px;
 	text-align: center;
-    border-radius: 5px;
-    color: white;
+	border-radius: 5px;
+	color: white;
 	font-weight: bold;
 	
+
+
+  
 	
 	
   }
