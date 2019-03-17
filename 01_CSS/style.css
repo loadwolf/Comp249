@@ -1,5 +1,7 @@
 html {
 	font-family:proxima nova,helvetica neue,Helvetica,Helvetica,Arial,sans-serif;
+	text-decoration: none;
+	list-style: none;
 }
 
 special{
@@ -14,25 +16,66 @@ body{
 
 
 header{
-	
+	border: solid #232323 1px;
 	text-align: center;
 	background-color:#232323;
 	color:white;
 }
 
-.menu {
-	
-	list-style: none;
-	grid-row: 2 / 3;
-    display: flex;
-	justify-content: space-between;
-	background-color: #232323;
-	color:white;	
-	padding:  10px  10px;
-	text-align: center!important;
-	vertical-align: middle;
+nav {	
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr ;
+
   }
-.menu a{
+
+
+nav .account-menu{
+	grid-column: 3 / span 1;
+	grid-row-start: 2;
+	border: solid orange 1px;
+	
+	display: flex;
+
+	font-size: .8125rem;
+	list-style-type: none; 
+	color: black;
+	padding: 10px;
+
+
+
+
+}
+
+nav .account-menu li{
+	padding: 0px 10px;
+	font-weight: bold;
+}
+
+nav .account-menu li:hover{
+	
+    color: #8cb2cc;
+    font-weight: bold;
+	
+  }
+
+nav #product-search-form{
+	grid-row-start: 2;
+	grid-column: 1 / span 1;
+	border: solid orange 1px;
+
+}
+
+nav .menu{
+	grid-column: 1 / span 4;	
+	display:flex  ;
+	list-style: none;
+}
+
+nav .menu ul li{
+	border: solid red 1px;
+}
+nav .menu a{
+
 	text-decoration: none;
 	border: solid grey 1px;
 	color:white;
@@ -42,68 +85,62 @@ header{
     background: #232323;
     padding: 10px;
 	text-align: center;
-	vertical-align: middle;
     border-radius: 5px;
     color: white;
-    font-weight: bold;
+	font-weight: bold;
+	
+	
 	
   }
 
   .menu a:hover{
-	
+
     color: #8cb2cc;
     font-weight: bold;
 	
   }
 
-#promo > ul{
-	
-	display: flex;
-	font-weight: 400;
-    letter-spacing: .07em;
-    text-transform: uppercase;
-    font-size: .625rem;
-    line-height: .825rem;
-    padding: .75rem 0;
-	color: #464646;
-	font-size: .8125rem;
-	font-family:  bold;
-}
 
-#promo {	
-	
+#promo {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+		
+	justify-content: center;
+	align-content: center;		
 	background: rgb(245, 245, 245);	
 	font-size: 16px;
 
+	border: solid orange 1px;
 }
 
-#promo >ul{
-	padding: 10px 20px;
-	text-align: center;
-	background: rgb(245, 245, 245);
-	text-decoration: none;
-	vertical-align: middle;
-	font-size: 16px;
-	cursor: pointer;
-}
-
-#promo > a{
-	list-style: none;
-
-    display: flex;
-	justify-content: space-between;
-	background-color: #232323;
-	color:white;	
-	padding:  10px  10px;
-	text-align: center!important;
-	vertical-align: middle;
+#promo > ul{
+	grid-column: 2 / span 2;
+	/* border: solid blue 1px; */
+	display: flex;/*side by side*/
+	text-transform: uppercase;
+	font-size: .8125rem;
+	list-style-type: none; 
+	color: black;
 	
+}
+
+#promo > ul > li  {
+	/* border: solid red 1px; */
+	padding: 0px 10px;
+	
+	
+}
+
+#promo > ul > li >a { 
+	list-style: none;
+	text-decoration: none;
+	color:#464646;
 	
 }
 .account-menu {
 	background: #a7dace;
 	border: solid orange 1px;
-
+	
 	
 	
 }
@@ -186,19 +223,37 @@ background-color:orange;
 	background-color: red;	
 }
 
+*/
 
+footer{
+	justify-content: center;
+	align-content: center;	
 
- footer{
-	border: solid orange 1px;
+	background-color: grey; 
+
+	 grid-template-columns: 100px 50px 100px;
+	 justify-items: center;
+	 align-items: center;
+	 border: solid orange 1px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	justify-items: center;
+/*justify-items: center;
 	align-items: center;
 	grid-column: 1 / 5;	
-	 background-color: grey; 
-} */
 
+	 
+ */
+} 
 
+footer #signupform{
+	place-self: center;
+	background-color: pink;
+}
+
+footer .social{
+	place-self: center;
+	background-color: pink;
+}
 
 
   /* <div class="wrapper">
